@@ -51,9 +51,10 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
+        android:hint="E-mail"
         android:backgroundTint = "#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
@@ -62,9 +63,10 @@
         android:layout_marginRight="30dp"/>
 
     <EditText
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-mail"
+        android:hint="Password"
         android:backgroundTint = "#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
@@ -74,9 +76,10 @@
         android:layout_marginRight="30dp"/>
 
     <EditText
+        android:id="@+id/passwordCheckEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="Password Check"
         android:backgroundTint = "#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
