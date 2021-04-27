@@ -22,10 +22,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint = "#ffffff"
-        android:text="E-mail"
+        android:hint="E-mail"
         android:textSize="28dp"
         android:fontFamily="@font/l"
-        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
         android:layout_marginTop="90dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"/>
@@ -33,11 +33,11 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:hint="Password"
         android:backgroundTint = "#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
-        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
         android:layout_marginTop="22dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"/>
