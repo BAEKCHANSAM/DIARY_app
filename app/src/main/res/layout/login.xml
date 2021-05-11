@@ -47,7 +47,6 @@
             android:textSize="20dp"
             android:textStyle="bold"/>
 
-
     </LinearLayout>
 
     <EditText
@@ -55,6 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="E-mail"
+        android:textColor="#ffffff"
         android:backgroundTint = "#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
@@ -68,6 +68,7 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:backgroundTint = "#ffffff"
+        android:textColor="#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
         android:textColorHint="#ffffff"
@@ -81,6 +82,7 @@
         android:layout_height="wrap_content"
         android:hint="Password Check"
         android:backgroundTint = "#ffffff"
+        android:textColor="#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
         android:textColorHint="#ffffff"

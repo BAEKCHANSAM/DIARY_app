@@ -19,9 +19,11 @@
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint = "#ffffff"
+        android:textColor="#ffffff"
         android:hint="E-mail"
         android:textSize="28dp"
         android:fontFamily="@font/l"
@@ -31,10 +33,12 @@
         android:layout_marginRight="30dp"/>
 
     <EditText
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:backgroundTint = "#ffffff"
+        android:textColor="#ffffff"
         android:textSize="28dp"
         android:fontFamily="@font/l"
         android:textColorHint="#ffffff"
@@ -87,7 +91,7 @@
 
     <View
         android:layout_width="wrap_content"
-        android:layout_height="0.7dp"
+        android:layout_height="0.9dp"
         android:background="#acacac"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"

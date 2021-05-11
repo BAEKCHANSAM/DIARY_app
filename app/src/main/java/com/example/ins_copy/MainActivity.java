@@ -34,23 +34,19 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.loginButton).setOnClickListener(onClickListener );
         findViewById(R.id.TextClick).setOnClickListener(onClickListener);
-
-
     }
-
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
     }
-
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.signUpButton:
-                    signup();
+                case R.id.loginButton:
+                     signUp();
                     break;
 
                 case R.id.TextClick:
@@ -61,20 +57,21 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void signup() {
+    private void signUp() {
 
         String email = ((EditText) findViewById(R.id.emailEditText)).getText().toString();
         String password = ((EditText) findViewById(R.id.passwordEditText)).getText().toString();
 
         if(email.length() > 0 && password.length() > 0){
-            mAuth.createUserWithEmailAndPassword(email, password)
+            mAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                startToast("회원가입에 성공했습니다.");
-                                //성공했을떄 Ui로직
+                                startToast("로그인에 성공했습니다.");
+                                Intent intent = new Intent(getApplicationContext(),MainPage.class);
+                                startActivity(intent);
                             } else {
                                 if(task.getException() != null){
                                     startToast(task.getException().toString());
